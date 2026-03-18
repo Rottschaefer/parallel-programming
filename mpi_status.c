@@ -22,6 +22,7 @@ MPI_Status estado;
         srand(MPI_Wtime());
         srand(MPI_Wtime());
         srand(MPI_Wtime());
+
         total_num = (rand() / (float)RAND_MAX) * MAX;
     /* Envia a quantidade de inteiros para o processo 1 */
         MPI_Send(numeros, total_num, MPI_INT, destino, etiq, MPI_COMM_WORLD);
